@@ -43,6 +43,17 @@ To package the app into a production-ready Windows installer containing the End 
 `desktopApp/build/compose/binaries/main/msi/`
 
 ---
+##  Troubleshooting & Windows Protection (SmartScreen)
+
+Since the compiled `.exe` and `.msi` installers do not contain an expensive Microsoft EV Digital Certificate, Windows Defender and **Windows SmartScreen** may flag the application upon the very first launch with a blue window saying: *"Windows protected your PC"*.
+
+This is standard behavior for independent open-source software. To bypass this and run your app safely, follow these steps:
+
+1. Click on the small **"More info"** link inside the blue pop-up window.
+2. Click the **"Run anyway"** button that appears at the bottom.
+3. If the standard Windows Firewall asks for network permissions upon connecting to your server, check the **"Private networks"** box and click **"Allow access"** to let the client communicate via SSH port 22.
+
+Windows will remember your choice, and this message will never appear again on that computer.
 
 ## EULA License
 
