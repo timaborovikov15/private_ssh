@@ -18,7 +18,7 @@ The application supports a fully **interactive session (Shell channel)**, allowi
 
 ---
 
-## 🛠 Project Architecture
+##  Project Architecture
 
 The project is built on top of the modern **Kotlin Multiplatform** wizard template:
 * `/shared` — contains the core business logic for SSH networking (using the `JSch` library) and shared UI layouts.
@@ -44,7 +44,7 @@ To package the app into a production-ready Windows installer containing the End 
 
 ---
 
-## ⚖ EULA License
+## EULA License
 
 This software is distributed under the terms of a custom **EULA (End User License Agreement)** and is provided on an "As Is" basis. The comprehensive legal text of the agreement protects the developer from liabilities regarding remote server management and is fully integrated into the MSI installer wizard (also available inside the `desktopApp/license` file).
 
