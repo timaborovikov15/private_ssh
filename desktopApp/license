@@ -1,0 +1,42 @@
+END USER LICENSE AGREEMENT (EULA)
+FOR THE "PRIVATE SSH TERMINAL" SOFTWARE APPLICATION
+
+PLEASE READ THIS END USER LICENSE AGREEMENT ("AGREEMENT") CAREFULLY BEFORE INSTALLING, COPYING, OR USING THIS SOFTWARE. BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT INSTALL OR USE THE SOFTWARE.
+
+1. SUBJECT OF AGREEMENT AND LICENSE GRANT
+1.1. This End User License Agreement is a legally binding contract concluded between the End User (hereinafter referred to as the "User") and the Copyright Holder represented by "Tim Private Software" (hereinafter referred to as the "Copyright Holder").
+1.2. The Copyright Holder hereby grants the User a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to install and use one copy of the "Private SSH Terminal" software (hereinafter referred to as the "Software") on a personal computer running Windows OS solely for personal, internal, and non-commercial purposes.
+
+2. RESTRICTIONS AND INTELLECTUAL PROPERTY RIGHTS
+2.1. All title, ownership rights, and intellectual property rights in and to the Software (including but not limited to any source code, graphical interface, layout design, and software architecture) belong exclusively to the Copyright Holder and are protected by international copyright laws and treaties.
+2.2. The User strictly agrees NOT to:
+a) Decompile, disassemble, decrypt, extract, or attempt to reconstruct or discover the source code or underlying algorithms of the Software by reverse engineering or any other methods;
+b) Distribute, sell, rent, lease, sub-license, lend, or transfer the Software, or any copy thereof, to any third parties;
+c) Use the Software to create any derivative works or competing software products.
+
+3. DISCLAIMER OF WARRANTIES ("AS IS")
+3.1. THIS SOFTWARE IS PROVIDED TO THE USER ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITH ALL FAULTS AND WITHOUT WARRANTIES OF ANY KIND. THE COPYRIGHT HOLDER MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT OF THIRD-PARTY RIGHTS.
+3.2. The Copyright Holder does not warrant that the functions contained in the Software will meet the User's specific requirements, that the operation of the Software will be uninterrupted or error-free, that the SSH sessions will remain stable at all times, or that the Software will be fully compatible with all versions of remote server operating systems or third-party web panel interfaces (including x-ui/3x-ui and its variants).
+
+4. LIMITATION OF LIABILITY (THE PRINCIPAL LEGAL SHIELD)
+4.1. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THIS SOFTWARE.
+4.2. THE COPYRIGHT HOLDER SHALL NOT BE HELD LIABLE FOR:
+a) Any loss, corruption, deletion, or unauthorized modification of data, databases, or configuration files located on the User's remote servers;
+b) The compromise, leakage, or interception by third parties of any passwords, remote host IP addresses, private SSH keys, or other sensitive authentication credentials inputted into the Software;
+c) The suspension, termination, or deletion of the User's virtual private servers or IP addresses by hosting providers, data centers, or government regulators arising out of the specific networking activities conducted via this Software.
+4.3. The User expressly acknowledges and agrees that they use the Software entirely at their own risk and assume full legal responsibility for the legality of all remote system administration and networking commands executed through the client terminal.
+
+5. PRIVACY AND NETWORK SECURITY
+5.1. The Software is a standalone, local client utility. It establishes network data transmissions strictly between the User's local computer and the remote server IP address specified by the User using standard secure cryptographic protocols (Secure Shell).
+5.2. The Software does not contain hidden telemetry modules, user activity trackers, or statistics aggregation tools. The Copyright Holder does not collect, record, or transmit inputted passwords, hosts, or console interaction history to any external servers belonging to the Copyright Holder or third parties.
+
+6. GOVERNING LAW AND DISPUTE RESOLUTION
+6.1. This Agreement shall be governed by, interpreted, and construed in accordance with the generally recognized principles of international law.
+6.2. All disputes or claims arising out of or in connection with this Agreement shall be subject to a mandatory pre-trial amicable settlement process via written claims. In the event that an agreement cannot be reached within thirty (30) days, the dispute shall be referred to and resolved by the competent judicial authorities located at the place of registration of the Copyright Holder.
+
+7. TERMINATION AND MISCELLANEOUS
+7.1. This Agreement is effective from the date you first install, copy, or use the Software and shall remain in effect until terminated. You may terminate it at any time by completely deleting the Software and all its components from your computer system.
+7.2. If any provision of this Agreement is held by a court of competent jurisdiction to be invalid, illegal, or unenforceable, the remaining provisions of this Agreement shall remain in full force and effect.
+
+Copyright Holder: Tim Private Software
+Publication Year: 2026. All rights reserved.
