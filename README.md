@@ -1,29 +1,51 @@
-This is a Kotlin Multiplatform project targeting Desktop (JVM).
+#  Private SSH Terminal
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-    - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-    - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-      For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-      the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-      Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-      folder is the appropriate location.
 
-### Running the apps
+A modern, fast, and secure desktop SSH client built with **Kotlin** and **Compose Multiplatform**. The application features a premium dark user interface heavily inspired by the popular **Termius** client.
 
-Use the run configurations provided by the run widget in your IDE's toolbar. You can also use these commands and
-options:
-
-- Desktop app:
-    - Hot reload: `./gradlew :desktopApp:hotRun --auto`
-    - Standard run: `./gradlew :desktopApp:run`
-
-### Running tests
-
-Use the run button in your IDE's editor gutter, or run tests using Gradle tasks:
-
-- Desktop tests: `./gradlew :shared:jvmTest`
+The application supports a fully **interactive session (Shell channel)**, allowing you to manage remote servers without delay, run automation scripts (such as `x-ui` / `3x-ui` control panels), and send commands directly from your physical PC keyboard.
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+##  Key Features
+
+* **Termius-Inspired UI**: A sleek interface utilizing a deep amethyst palette and a high-contrast terminal view designed to reduce eye strain.
+* **Full Interactive Shell**: The connection is established once and held active in the background, enabling real-time bidirectional communication with the server.
+* **Physical Enter Key Submission**: Commands are dispatched instantly by pressing the Enter key on your hardware keyboard—no mouse clicks required.
+* **Live Connection Status Indicator**: An elegant LED indicator (`CONNECTED` / `CONNECTING` / `DISCONNECTED`) displaying the real-time state of your session.
+* **Automated Log Cleaning**: An integrated regex-based parser strips out messy ANSI terminal color codes on the fly, keeping your console output perfectly clean.
+* **100% Secure & Private**: A standalone, local offline application. No telemetry, no trackers, and no remote logging. Your passwords and host IPs are transmitted strictly via encrypted SSH directly to your server.
+
+---
+
+## 🛠 Project Architecture
+
+The project is built on top of the modern **Kotlin Multiplatform** wizard template:
+* `/shared` — contains the core business logic for SSH networking (using the `JSch` library) and shared UI layouts.
+* `/desktopApp` — desktop deployment module targetting the JVM (Windows), responsible for generating native binaries, app manifests, and shortcut integration.
+
+---
+
+##  How to Run and Build
+
+### Local Development Run (Hot Reload):
+To launch the application from the source code within your IDE (IntelliJ IDEA):
+```bash
+./gradlew :desktopApp:run
+```
+
+### Build Native Windows Installer (.MSI):
+To package the app into a production-ready Windows installer containing the End User License Agreement (EULA) and automated Desktop/Start Menu shortcuts:
+```bash
+./gradlew :desktopApp:packageMsi
+```
+*Once the build finishes successfully, your installer will be located at:*  
+`desktopApp/build/compose/binaries/main/msi/`
+
+---
+
+## ⚖ EULA License
+
+This software is distributed under the terms of a custom **EULA (End User License Agreement)** and is provided on an "As Is" basis. The comprehensive legal text of the agreement protects the developer from liabilities regarding remote server management and is fully integrated into the MSI installer wizard (also available inside the `desktopApp/license` file).
+
+Copyright (c) 2026 Tim Private Software. All rights reserved.
