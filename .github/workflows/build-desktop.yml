@@ -54,7 +54,11 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Build Ubuntu DEB Package
-        run: ./gradlew :desktopApp:packageDistributionForCurrentOS
+        # Первая команда дает права на запуск, вторая — собирает проект
+        run: |
+          chmod +x gradlew
+          ./gradlew :desktopApp:packageDistributionForCurrentOS
+      
 
       - name: Upload Ubuntu DEB Artifact
         uses: actions/upload-artifact@v4
